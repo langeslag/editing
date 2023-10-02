@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI 
+  [
+    <!ENTITY et "&#x204A;">
+  ]
+  >
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cædmon's Hymn</title>
+        <editor>P. S. Langeslag</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Coursework <date>2021</date>; not for distribution.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="C">
+            <abbr type="siglum">C</abbr>
+            <name>Cambridge, Corpus Christi College 41</name>
+            <locus from="322" to="322"/>
+          </witness>
+          <witness xml:id="L">
+            <abbr type="siglum">L</abbr>
+            <name>Oxford, Bodleian Library Laud Misc. 243</name>
+            <locus from="82v" to="82v"/>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="edition">
+        <div type="poem" n="1" xml:id="caedmonshymn">
+          <lg>
+            <l n="1">Nu we <app>
+                <lem wit="#C">herigan sculon</lem>
+                <rdg wit="#L">sculon herian <del rend="underlining">herian</del></rdg>
+              </app><caesura/> heofonrices weard</l>
+            <l n="2">metodes mihte<caesura/> &et; his modgeþanc</l>
+            <l n="3">weorc <app>
+                <lem wit="#C">wuldorgodes</lem>
+                <rdg wit="#L">wulderfæder</rdg>
+              </app><caesura/> swa he wundra <app>
+                <lem wit="#C">fela</lem>
+                <rdg wit="#L">gehwæs</rdg>
+              </app></l>
+            <l n="4">ece drihten <caesura/>
+              <app>
+                <lem wit="#C">ord astealde</lem>
+                <rdg wit="#L"/>
+              </app></l>
+            <l n="5"><app>
+                <lem wit="#C">he</lem>
+                <rdg wit="#L">þa he</rdg>
+              </app> ærest sceop <caesura/>
+              <app>
+                <lem wit="#C">eorðan</lem>
+                <rdg wit="#L">eorðe</rdg>
+              </app> bearnum</l>
+            <l n="6">heofon to hrofe <caesura/>
+              <app>
+                <lem wit="#C #L">halig scyppend</lem>
+                <witDetail wit="#L">transposed to end of poem</witDetail>
+              </app></l>
+            <l n="7"><app>
+                <lem wit="#C">þe</lem>
+                <rdg wit="#L">þa</rdg>
+              </app> middangeard<caesura/> manncynnes weard</l>
+            <l n="8">ece drihten<caesura/> æfter teode</l>
+            <l n="9">fyrum <app>
+                <lem wit="#C">foldan</lem>
+                <rdg wit="#L">on folden</rdg>
+                <note>Here's a <mentioned>note</mentioned>.</note>
+              </app><caesura/> frea ælmihtig</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

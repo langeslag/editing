@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI 
+[
+<!ENTITY % entities_list SYSTEM
+'https://langeslag.uni-goettingen.de/entities.txt'   >
+%entities_list;]
+>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Demo Document</title>
+        <editor>Some Editor</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Coursework <date>2021</date>; not for distribution.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit>
+        	<witness xml:id="A">
+        		<abbr type="siglum">A</abbr>
+        		<name>London, British Library, Cotton Caligula B. xii</name>
+        	</witness>
+        	<witness xml:id="B">
+        		<abbr type="siglum">B</abbr>
+        		<name>Cambridge, Corpus Christi College 303</name>
+        		<locus from="47v" to="50r"/>
+        	</witness>
+        	<witness xml:id="B2">
+        		<abbr type="siglum">B<hi rend="superscript">2</hi></abbr>
+        		<name>Cambridge, Corpus Christi College 303</name>
+        		<locus from="115r" to="116v"/>
+        	</witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+    	<div type="edition">
+    		<div type="textpart" subtype="book" n="1" xml:id="book1">
+    			<p n="1"><hi rend="size(12)">L</hi>orem ipsum dolor sit amet,
+    				<unclear>consectetur</unclear> adipiscing elit. Curabitur <add>quis</add> dapibus
+    				<del>felis</del>. Duis ultricies interdum nibh, a tempus sem porta ut. Nunc
+    				pellentesque <app>
+    					<lem wit="#A #B">bibendum</lem>
+    					<rdg wit="#B2">vivendum</rdg>
+    				</app> est, quis <choice>
+    					<sic>blandet</sic>
+    					<corr>blandit</corr>
+    				</choice> arcu <app>
+    					<lem wit="#A" xml:id="test1">scelerisque</lem>
+    					<witDetail wit="#A" target="#test1">corr. from scelerique</witDetail>
+    					<rdg wit="#B #B2" xml:id="test2">scelerumque</rdg>
+    					<witDetail wit="#B2" target="#test2">corr. from scelercumque</witDetail>
+    				</app> sit amet. In pulvinar metus et nibh suscipit, faucibus lobortis erat ultrices.
+    				Morbi porta velit eget tempor finibus. Ut tincidunt purus nec augue molestie viverra.
+    				Duis vitae urna varius, porta massa ac, rhoncus ligula. In ut nisl at orci tincidunt
+    				ullamcorper. Phasellus scelerisque dolor ante, non porttitor odio suscipit ut. Sed nec
+    				sapien vel nibh bibendum efficitur. Donec laoreet nulla dui, malesuada fermentum lacus
+    				ullamcorper sed. Nam sit amet urna vel erat auctor pellentesque.</p>
+    			
+    			<p n="2">Maecenas mattis ante nisi, ut <supplied>sodales</supplied> mauris tincidunt in.
+    				Fusce blandit mi eu purus porta ullamcorper. Pellentesque fermentum turpis quis
+    				hendrerit maximus. Etiam fringilla nisl ullamcorper, fermentum quam eget, hendrerit ex.
+    				Pellentesque in dictum dolor. Quisque ligula eros, volutpat a nisi id, placerat lobortis
+    				purus. Proin ut ornare enim. Nulla luctus, diam eget volutpat rhoncus, lorem urna
+    				sagittis massa, at aliquam arcu nibh nec nibh.</p>
+    			
+    			<p n="3">Suspendisse maximus <gap unit="chars" quantity="10"/> ornare velit eu
+    				convallis:</p>
+    		</div>
+    		<div type="poem" n="1" xml:id="poem1">
+    			<lg>
+    				<l n="1">Nu we <app>
+    					<lem wit="#A">herigan sculon</lem>
+    					<rdg wit="#B #B2">sculon herian</rdg>
+    				</app><caesura/> heofonrices weard</l>
+    				<l n="2">metodes mihte<caesura/> &et; his modgeþanc</l>
+    				<l n="3">weorc <app>
+    					<lem wit="#B #A" xml:id="fish">wuldorgodes</lem>
+    					<rdg wit="#B2">wuldorfæder</rdg>
+    					<note>a note appears here</note>
+    				</app><caesura/> swa he wundra fela</l>
+    				<l n="4">ece <hi rend="color(red)">drihten</hi>
+    					<caesura/> ord astealde</l>
+    				<l n="5">he ærest sceop<caesura/> eorðan bearnum</l>
+    				<l n="6">heofon to hrofe<caesura/> halig scyppend</l>
+    				<l n="7">þe middangeard<caesura/> manncynnes weard</l>
+    				<l n="8">ece <choice>
+    					<abbr>dri&hstrok;</abbr>
+    					<expan>drih<ex>ten</ex></expan>
+    				</choice>
+    					<caesura/> æfter teode</l>
+    				<l n="9">fyrum foldan<caesura/> frea ælmihtig</l>
+    			</lg>
+    		</div>
+    		
+    		<div type="textpart" subtype="book" n="2" xml:id="book2">
+    			<p n="5">Nulla facilisi. Aenean nec mattis felis, at suscipit ex. Mauris id ornare ante,
+    				sit amet tempor lorem. Vivamus ac elit eget quam congue sagittis semper sit amet diam.
+    				Suspendisse at metus non est mattis mattis ut eu ante. Interdum et malesuada fames ac
+    				ante ipsum primis in faucibus. Etiam quam libero, porttitor quis orci vitae, porttitor
+    				facilisis nulla. Nulla eu erat pellentesque, placerat risus eget, auctor dui. Nunc arcu
+    				felis, convallis sed felis in, venenatis mattis tellus. Sed a nibh non nulla posuere
+    				porttitor eu nec tellus. Aenean vehicula dapibus ex, ac tempor metus. Integer sit amet
+    				lacinia elit, ut volutpat purus. Proin cursus velit sed lobortis tincidunt.</p>
+    			
+    			<p n="6">Nunc id lorem euismod, cursus turpis vel, hendrerit ipsum. Donec in malesuada
+    				nibh. Praesent aliquam leo sem, vel consectetur ligula sodales vel. Suspendisse
+    				malesuada diam lorem, vel rhoncus justo interdum nec. Etiam lacus lectus, efficitur quis
+    				laoreet vel, fermentum nec est. Nulla id augue risus. Aenean eget diam varius, posuere
+    				ante id, finibus arcu. Sed vitae est vehicula, euismod ipsum eget, semper massa. Integer
+    				eleifend, risus et imperdiet imperdiet, lorem tellus hendrerit turpis, id tempus justo
+    				erat quis odio. Cras pharetra pellentesque nulla, eu blandit erat consequat at. Etiam
+    				tincidunt augue in hendrerit varius. Maecenas a orci ac leo viverra dapibus nec ut nunc.
+    				Vivamus aliquet nibh dapibus pulvinar dictum. Donec vel ipsum quis dolor lobortis
+    				feugiat eu ac ligula. Nunc non placerat sem.</p>
+    			
+    			<p n="7">Nam eu blandit lectus. Curabitur vitae ornare augue. Vivamus condimentum a augue
+    				in vulputate. Donec sit amet dui tristique, feugiat massa ornare, tristique urna.
+    				Vestibulum bibendum, eros sed consectetur condimentum, turpis orci faucibus tortor, ac
+    				egestas enim ante vestibulum magna. Proin aliquam nibh eget quam vehicula ultrices.
+    				Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris nec volutpat quam,
+    				eu bibendum ipsum. Duis blandit lorem id nulla ornare lacinia. Sed vel risus sed massa
+    				fringilla convallis at a ipsum. Mauris pretium est enim, scelerisque ullamcorper nisi
+    				facilisis ullamcorper.</p>
+    		</div>
+    	</div>
+    </body>
+  </text>
+</TEI>

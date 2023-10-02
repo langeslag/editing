@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Minimal TEI Document</title>
+				<author>P. S. Langeslag</author>
+			</titleStmt>
+			<publicationStmt>
+				<p>Course materials <date>2021</date>.</p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Identify the source you are encoding here.</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>Text body goes here.</p>
+		</body>
+	</text>
+</TEI>

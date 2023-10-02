@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI [
+<!ENTITY et "&#x204A;">
+<!ENTITY combmacr "&#x0304;">
+<!ENTITY slongdes "&#xF127;">
+]>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title><!-- Title of the work you are editing -->
+        <editor>Your Name</editor><!-- Identify yourself in this line -->
+      </titleStmt>
+      <publicationStmt>
+        <p>Coursework <date>2023</date>; not for distribution.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit><!-- Modify and expand as required -->
+          <witness xml:id="A">
+            <abbr type="siglum">A</abbr>
+            <name>Full shelfmark of MS A here</name>
+            <locus from="144v" to="152r"/><!-- Modiy as required -->
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="edition">
+        <div type="textpart"><!-- Delete whichever of these environments you don't need. -->
+          <p n="1">Prose transcription goes here.</p>
+        </div>
+        <div type="poem"><!-- Delete whichever of these environments you don't need. -->
+          <lg>
+            <l n="1">Verse transcription goes here.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

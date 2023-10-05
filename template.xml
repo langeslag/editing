@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE TEI [
-<!ENTITY et "&#x204A;">
-<!ENTITY combmacr "&#x0304;">
-<!ENTITY slongdes "&#xF127;">
+<!-- TIRONIAN SIGN ET -->		<!ENTITY et "&#x204A;">
+<!-- COMBINING MACRON -->		<!ENTITY combmacr "&#x0304;">
+<!-- LATIN SMALL LETTER LONG S DESCENDING -->		<!ENTITY slongdes "&#xF127;">
 ]>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">

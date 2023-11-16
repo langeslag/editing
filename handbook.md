@@ -37,7 +37,7 @@ header-includes:
 
 # Software
 
-For the purpose of this course, I recommend you set up [Visual Studio Code](https://code.visualstudio.com/) ('VS Code' or 'Code') and install the [XML extension by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml) as well as [GitLab Workflow](https://docs.gitlab.com/ee/editor_extensions/visual_studio_code/). You are free to substitute your coding editor of choice if you prefer, whether or not it handles XSLT transformation, but all instructions and demonstrations in the context of this course will assume you are working with VS Code.
+For the purpose of this course, I recommend you set up [Visual Studio Code](https://code.visualstudio.com/) ('VS Code' or 'Code') and install the [XML extension by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml). You are free to substitute your coding editor of choice if you prefer, whether or not it handles XSLT transformation, but all instructions and demonstrations in the context of this course will assume you are working with VS Code.
 
 ## Installation and Setup
 
@@ -380,4 +380,4 @@ mannu<choice>
 
 ## Punctuation
 
-Medieval punctuation differs greatly from modern punctuation. Depending on your manuscript, you may encounter mostly simple puncti (·) or a greater variety of marks. Because we will mostly be producing normalized or semidiplomatic editions, you may ignore these and insert modern punctuation where you see fit, or just leave out punctuation altogether. If you do have a use case for medieval punctuation, you will often find that the unicode character set does not account for them. Fortunately, the [Medieval Unicode Font Initiative](https://mufi.info) has defined a larger set, and we can use their custom entity codes as documented [here](https://www.menota.org/menota-entities.txt). The three most common marks are additionally on our [list of special characters](https://langeslag.uni-goettingen.de/editing/specialchars.html) and in our Oxygen keybindings under ALT+8/9/0.
+Medieval punctuation differs greatly from modern punctuation. Depending on your manuscript, you may encounter mostly simple puncti (·) or a greater variety of marks. Because we will mostly be producing normalized or semidiplomatic editions, you may ignore these and insert modern punctuation where you see fit, or just leave out punctuation altogether. If you do have a use case for medieval punctuation, you will often find that the unicode character set does not account for them. Fortunately, the [Medieval Unicode Font Initiative](https://mufi.info) has defined a larger set, and we can use their custom entity codes as documented [here](https://www.menota.org/menota-entities.txt). The three most common marks are additionally on our [list of special characters](https://langeslag.uni-goettingen.de/editing/specialchars.html).

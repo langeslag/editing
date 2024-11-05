@@ -2,7 +2,7 @@
 % P. S. Langeslag
 % revision of \today
 
-<!---
+<!--
 Process file as `pandoc -o handbook.pdf handbook.md --pdf-engine=xelatex --filter pandoc-crossref`.
 
 Note that nonvalidating syntax has been manually marked using \texttt, \textbf, and \textcolor. I haven’t quite got the Pygments olive green colour right though.
@@ -55,7 +55,9 @@ VS Code relies on the concept of the [workspace](https://code.visualstudio.com/d
 
 ## Accessing Course Files
 
-You can access the course repository directly from within VS Code. First close any other project folders you may already have open (`Ctrl+K F`), then navigate to the Source Control window (`Ctrl+Shift+G`). When prompted for a repository URL, copy in `https://github.com/langeslag/editing`. Once the remote folder has been cloned, you will be prompted to open the new workspace and given a choice of whether to trust its contents.
+If you do not already have Git installed and set up, the easiest way to get at the course files is to visit <https://github.com/langeslag/editing>, click the green button that reads &lt;&nbsp;&gt;&nbsp;Code, and select Download ZIP. Extract the archive to a new folder in a location of your choice. Finally, in VS Code select File &gt; Open Folder… and locate your new folder.
+
+If you have Git already installed and configured, you can access the course repository directly from within VS Code. First close any other project folders you may already have open (`Ctrl+K F`), then navigate to the Source Control window (`Ctrl+Shift+G`). When prompted for a repository URL, copy in `https://github.com/langeslag/editing`. Once the remote folder has been cloned, you will be prompted to open the new workspace and given a choice of whether to trust its contents.
 
 ## File Templates
 
@@ -103,6 +105,8 @@ What you'll want to do now is enter the desired keybindings in between the squar
 ```
 
 The keybindings should work as soon as you save the file. The validator will tell you if you've got anything wrong, e.g. if you've forgotten a bracket, comma, or quotation mark. For more on VS Code keybindings, see the [documentation](https://code.visualstudio.com/docs/getstarted/keybindings).
+
+__Please note:__ macOS has a lot of keybindings hardcoded into the operating system that will override anything you might have defined yourself. This makes the process of identifying suitable keyboard shortcuts considerably harder on macOS. The same is true to a lesser extent of most non-English keyboard layouts across all operating systems.
 
 # XML File Structure and the TEI Header
 

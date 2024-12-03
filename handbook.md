@@ -319,7 +319,7 @@ With this problem as with others, you may want to try different solutions and se
 Please note the following:
 
 - TEI gives editors a choice between encoding each reading using `<rdg>`{.xml}, so that the document does not explicitly endorse any one reading as preferable, or explicitly indicating which reading is to be used in the edited text by encoding it with `<lem>`{.xml} (for _lemma_, here meaning the sequence as it should appear in the edited text), as in the example. However, the DLL stylesheets require a `<lem>`{.xml} entry, so that’s the approach you’ll want to take in order to be able to transform using our transformation tool.
-- We refer back to the witnesses identified in the TEI header using the sigla with which they are there associated, with one important difference: in the apparatus we prepend the siglum a hash or pound symbol `#` to the siglum to indicate it refers to an identifier defined elsewhere in the document.
+- We refer back to the witnesses identified in the TEI header using the programmatic identifiers with which they are there associated, with one important difference: in the apparatus we prepend a hash or pound symbol `#` to the identifier to indicate it refers to an identifier defined elsewhere in the document.
 - Multiple witnesses sharing the same reading are entered as space-separated values of the attribute `@wit`{.xml}.
 - For ease of reading the source code, you'll want to print each reading on its own line of code.
 
